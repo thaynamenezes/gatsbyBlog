@@ -1,6 +1,6 @@
 ---
 slug: "/second-post"
-date: "2019-04-16"
+date: "2019-04-17"
 title: "Second Post"
 ---
 
