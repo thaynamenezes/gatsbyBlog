@@ -22,6 +22,17 @@ const Layout = ({ children }) => (
             description
           }
         }
+        allMarkdownRemark {
+          edges {
+            node {
+              frontmatter {
+                title
+                slug
+                date(formatString: "MMMM DD, YYYY")
+              }
+            }
+          }
+        }
       }
     `}
     render={data => (
