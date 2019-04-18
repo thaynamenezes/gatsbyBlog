@@ -4,7 +4,7 @@ import Layout from './layout.js'
 
 export default class postLayout extends Component {
   render() {
-    const { markdownRemark } = this.props.data
+    const { markdownRemark } = this.props.data;
 
     return (
       <Layout>
