@@ -7,7 +7,7 @@ import central from "../images/central-perk.png"
 
 const HeaderWrapper = styled.div `
   background: #00351b;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 `;
 
 const HeaderContainer = styled.div `
