@@ -7,35 +7,56 @@ import central from "../images/central-perk.png"
 
 const HeaderWrapper = styled.div `
   background: #00351b;
-  margin-bottom: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const HeaderContainer = styled.div `
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 1rem;
+  margin: 0;
+  max-width: 800px;
+  padding: .5rem;
     img {
       margin-bottom: 0rem;
     }
 `;
 
+const NavbarContainer = styled.div `
+  a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem;
+    font-size: .9rem;
+  }
+`
+
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
     <HeaderContainer>
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ margin: '0' }}>
         <Link
           to="/"
           style={{
             color: `white`,
-            textDecoration: `none`,
+            textDecoration: `none`
           }}
         >
-        <img style={{width: '200px'}} 
+        <img style={{width: '150px'}} 
              src={ central } 
              alt="Central Perk Coffee Icon"/>
         </Link>
       </h1>
     </HeaderContainer>
+    <nav style={{
+      margin: 'auto 1rem',
+      padding: '1 rem'
+    }}>
+      <NavbarContainer>
+        <Link to="/">Blog</Link>
+        <Link to="/about/">About</Link>
+        <Link to="/company/team/">Team</Link>
+      </NavbarContainer>
+    </nav>
   </HeaderWrapper>
 )
 
